@@ -20,4 +20,4 @@ jobs:
       - name: Build with Gradle
         run: ./gradle clean :build -x test
       - name: Run batch
-        run: java -jar -Dspring.batch.job.name=TickerSlackJob ./build/libs/cryto-currency-1.0-SNAPSHOT.jar market=KRW-BTC
+        run: java -jar -Dspring.batch.job.name=TickerSlackJob ./build/libs/cryto-currency.jar market=KRW-BTC
