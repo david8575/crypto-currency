@@ -27,6 +27,7 @@ public class TickerSlackJobConfig {
                 .build();
     }
 
+
     @Bean
     public Step step(JobRepository jobRepository, Tasklet tasklet, PlatformTransactionManager platformTransactionManager){
         return new StepBuilder("step", jobRepository)
